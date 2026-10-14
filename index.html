@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Asisten Belajar Offline – P13</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+
+<header class="toolbar">
+  <h1>Asisten Belajar Offline</h1>
+  <select id="theme-select" class="theme-select">
+    <option value="light" selected>Light</option>
+    <option value="dark">Dark</option>
+    <option value="pink">Pink</option>
+    <option value="green">Green</option>
+    <option value="purple">Purple</option>
+  </select>
+</header>
+
+<main class="container">
+  <!-- Folder scanner -->
+  <section class="card" id="scanner">
+    <h2>📂 Pilih Folder “Bahan Latihan P13”</h2>
+    <button id="choose-folder">Pilih Folder</button>
+    <p id="folder-status" class="status">Belum ada folder yang dipilih.</p>
+  </section>
+
+  <!-- Chat assistant -->
+  <section class="card" id="chat-section">
+    <h2>💬 Chat Belajar</h2>
+    <div id="chat-window" class="chat-window"></div>
+    <input id="user-input" type="text" placeholder="Ketik pertanyaan..." autocomplete="off">
+    <button id="send-btn">Kirim</button>
+  </section>
+
+  <!-- Quiz generator -->
+  <section class="card" id="quiz-section">
+    <h2>📝 Generator Kuiz</h2>
+    <button id="generate-quiz">Buat Kuiz</button>
+    <div id="quiz-container"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Offline • Dibuat dengan ❤️ oleh Antigravity</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
